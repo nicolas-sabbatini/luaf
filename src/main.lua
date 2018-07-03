@@ -1,6 +1,7 @@
 local w, h, x, y
 
 -- Map the value 's' range '[a1-a2]' to a value between '[b1-b2]'
+-- https://rosettacode.org/wiki/Map_range#lua
 function mapRange( a1, a2, b1, b2, s )
     return b1 + (s-a1)*(b2-b1)/(a2-a1)
 end
